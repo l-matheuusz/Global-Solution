@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1057B5"
+        android:theme="?attr/actionBarTheme"
+        app:subtitle="Adicionar Item"
+        app:subtitleTextColor="#FFFFFF" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#EDEDED">
+
+        <EditText
+            android:id="@+id/et_nome_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Item"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_descricao_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição (opcional)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_consumo_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumo Estimado (kWh)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1057B5"
+            android:text="Salvar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/redirectEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:backgroundTint="#A0E9FB"
+            app:srcCompat="@drawable/baseline_edit_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/redirectListagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="#A0E9FB"
+            android:clickable="true"
+            app:backgroundTint="#A0E9FB"
+            app:srcCompat="@drawable/baseline_view_headline_24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
